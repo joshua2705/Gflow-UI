@@ -1,0 +1,28 @@
+.vision:link{
+    display: block;
+    float: left;
+    margin: 0 5px;
+    padding: 0 0 0 15px;
+    border-left: 1px solid #bababa;
+    margin-top: 23px;
+    width: 85px;
+}
+
+.logo:link{
+    display: block;
+    float: left;
+    margin: 10px 5px;
+}
+
+a.logo img {
+    width: 225px;
+}
+
+a.vision img {
+    width: 62px;
+    margin-top: 0;
+}
+
+img{
+    vertical-align: middle;
+}
