@@ -1,1 +1,16 @@
-<p>navbar works!</p>
+<mat-toolbar color="primary">
+  <span id="appName">GFlow</span>
+  <div class="spacer"></div>
+  <button id="login-button" mat-button [matMenuTriggerFor]="menu">Login</button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>Authority</button>
+    <mat-divider></mat-divider>
+    <button mat-menu-item>Citizen</button>
+  </mat-menu>
+  <button id="signup-button" mat-button [matMenuTriggerFor]="menu">Sign-up</button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>Authority</button>
+    <mat-divider></mat-divider>
+    <button mat-menu-item>Citizen</button>
+  </mat-menu>
+ </mat-toolbar>

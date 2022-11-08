@@ -1,0 +1,44 @@
+.mat-toolbar{
+	background-color: #169065;
+	color: white;
+	font-size: large;
+  }
+
+  .spacer{
+	flex: 1 1 auto;
+  }
+
+  #appName{
+	font-size: larger;
+	color: #EECA0A;
+  }
+
+  #login-button{
+	background-color: #169065;
+	color: #EECA0A;
+	font-size: medium;
+	font-weight: bold;
+	height: 55px;
+	border: none;
+	margin: 0px;
+	margin-right: 10px;
+  }
+
+  #login-button:hover{
+	color: white;
+  }
+
+  #signup-button{
+	background-color: #169065;
+	color: #EECA0A;
+	font-size: medium;
+	font-weight: bold;
+	height: 45px;
+	border: solid #EECA0A 2px;
+	border-radius: 5px;
+  }
+
+  #signup-button:hover{
+	color: white;
+	border: solid #EECA0A 2px;
+  }
