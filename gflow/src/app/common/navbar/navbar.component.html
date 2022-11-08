@@ -1,16 +1,27 @@
 <mat-toolbar color="primary">
   <span id="appName">GFlow</span>
   <div class="spacer"></div>
-  <button id="login-button" mat-button [matMenuTriggerFor]="menu">Login</button>
-  <mat-menu #menu="matMenu">
-    <button mat-menu-item>Authority</button>
-    <mat-divider></mat-divider>
-    <button mat-menu-item>Citizen</button>
-  </mat-menu>
-  <button id="signup-button" mat-button [matMenuTriggerFor]="menu">Sign-up</button>
-  <mat-menu #menu="matMenu">
-    <button mat-menu-item>Authority</button>
-    <mat-divider></mat-divider>
-    <button mat-menu-item>Citizen</button>
-  </mat-menu>
+  <div *ngIf="prelogin">
+    <button id="login-button" mat-button [matMenuTriggerFor]="menu">Login</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Authority</button>
+      <mat-divider></mat-divider>
+      <button mat-menu-item>Citizen</button>
+    </mat-menu>
+    <button id="signup-button" mat-button [matMenuTriggerFor]="menu">Sign-up</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Authority</button>
+      <mat-divider></mat-divider>
+      <button mat-menu-item>Citizen</button>
+    </mat-menu>
+  </div>
+
+  <div *ngIf="!prelogin">
+    <i class="material-icons" [matMenuTriggerFor]="menu">account_circle</i>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>User Profile</button>
+      <mat-divider></mat-divider>
+      <button mat-menu-item>Log out</button>
+    </mat-menu>
+  </div>
  </mat-toolbar>

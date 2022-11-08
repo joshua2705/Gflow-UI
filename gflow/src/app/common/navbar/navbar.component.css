@@ -42,3 +42,10 @@
 	color: white;
 	border: solid #EECA0A 2px;
   }
+
+  .material-icons{
+	cursor: pointer;
+	width: fit-content;
+	height: fit-content;
+	font-size: 30px;
+  }
