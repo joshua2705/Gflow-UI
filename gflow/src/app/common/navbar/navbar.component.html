@@ -1,22 +1,22 @@
 <mat-toolbar color="primary">
   <span id="appName">GFlow</span>
   <div class="spacer"></div>
-  <div *ngIf="prelogin">
+  <div *ngIf="!loggedin && !processing">
     <button id="login-button" mat-button [matMenuTriggerFor]="menu">Login</button>
     <mat-menu #menu="matMenu">
-      <button mat-menu-item>Authority</button>
+      <button routerLink="/authentication/authLogin" mat-menu-item>Authority</button>
       <mat-divider></mat-divider>
-      <button mat-menu-item>Citizen</button>
+      <button routerLink="/authentication/citzLogin" mat-menu-item>Citizen</button>
     </mat-menu>
-    <button id="signup-button" mat-button [matMenuTriggerFor]="menu">Sign-up</button>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item>Authority</button>
+    <button id="signup-button" mat-button [matMenuTriggerFor]="menu1">Sign-up</button>
+    <mat-menu #menu1="matMenu">
+      <button routerLink="/authentication/authSignup" mat-menu-item>Authority</button>
       <mat-divider></mat-divider>
-      <button mat-menu-item>Citizen</button>
+      <button routerLink="/authentication/citzSignup" mat-menu-item>Citizen</button>
     </mat-menu>
   </div>
 
-  <div *ngIf="!prelogin">
+  <div *ngIf="loggedin && !processing">
     <i class="material-icons" [matMenuTriggerFor]="menu">account_circle</i>
     <mat-menu #menu="matMenu">
       <button mat-menu-item>User Profile</button>

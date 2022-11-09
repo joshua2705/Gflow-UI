@@ -18,14 +18,15 @@
 	color: #EECA0A;
 	font-size: medium;
 	font-weight: bold;
-	height: 55px;
+	height: 45px;
 	border: none;
 	margin: 0px;
 	margin-right: 10px;
   }
 
   #login-button:hover{
-	color: white;
+	background-color: #EECA0A;;
+	color: #169065;
   }
 
   #signup-button{
@@ -39,8 +40,9 @@
   }
 
   #signup-button:hover{
-	color: white;
-	border: solid #EECA0A 2px;
+	background-color: #EECA0A;
+	color: #169065;
+	border: solid #169065 2px;
   }
 
   .material-icons{

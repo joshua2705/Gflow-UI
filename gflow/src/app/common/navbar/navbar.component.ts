@@ -10,9 +10,13 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   @Input()
-  prelogin: boolean = false;
+  loggedin: boolean = false;
   
+  @Input()
+  processing: boolean = false;
+
   ngOnInit(): void {
+    console.log(this.loggedin,this.processing)
   }
 
 }
